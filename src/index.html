@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synder Recordings</title>
+    <link rel="icon" type="image/x-icon" href="./images/PNGS/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>	
+</head>
+<body>
+    <!-- Canvas -->
+    <canvas class="webgl"></canvas>
+
+    <!-- Cursor Follower -->
+    <div class="cursorFollowerBig DesktopOnly"></div>
+    <div class="cursorFollowerMid DesktopOnly"></div>
+    <div class="cursorFollowerSmall DesktopOnly"></div>
+
+    <!-- Menu Modeal (Portrait Only) -->
+    <div class="menuButtonDiv">
+
+        <div class="menuStyle">
+            <div class="menuButtonBox">
+                <div class="menuButton">
+                    <span class="material-symbols-outlined menuLogo">
+                        menu
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menuModalBlank">
+
+        <div class="menuActualBlank"></div>
+
+        <div class="menuStyle">
+            <div class="menuButtonWhite">
+                <span class="material-symbols-outlined menuLogoWhite">
+                    menu
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <!-- Menu Modal Actual -->
+    <div class="menuModal">
+        <div class="menuModalTop">
+            <!-- Menu Nav -->
+            <div class="menuModalMain">
+                <div class="menuModalNav header3TextMenu">
+                    <div class="menuModalNavButton menuCurrentNav">
+                        <img src="./images/icons/Home.svg" alt="Home" class="menuCurrentNavLogo menuNavSvg">
+                        Home
+                    </div>
+                    <div class="menuModalNavButton">
+                        <img src="./images/icons/Records.svg" alt="Home" class="navLogo menuNavSvg">
+                        Records
+                    </div>
+                    <div class="menuModalNavButton">
+                        <img src="./images/icons/Music.svg" alt="Home" class="navLogo menuNavSvg">
+                        Music
+                    </div>
+                    <div class="menuModalNavButton">
+                        <img src="./images/icons/Artists.svg" alt="Home" class="navLogo menuNavSvg">
+                        Artists
+                    </div>
+                    <div class="menuModalNavButton">
+                        <img src="./images/icons/Concerts.svg" alt="Home" class="navLogo menuNavSvg">
+                        Concerts
+                    </div>
+                </div>
+
+                <!-- Menu Sub Footer -->
+                <div class="menuSubDivs header3TextSubMenu">
+                   
+                    <div class="menuSubDivList currentMenuSubDivList">
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            About Us
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Our Story
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Team
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Careers
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            FAQ
+                            </t>
+                        </div>
+                    </div>
+
+                    <div class="menuSubDivList">
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            What a Time
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Coming Home
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Always First
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            So Far Gone
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Big Bluez
+                            </t>
+                        </div>
+                    </div>
+
+                    <div class="menuSubDivList">
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Missing Out
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Trapsoul
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Sonder Sons
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Paradise Today
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Needed
+                            </t>
+                        </div>
+                    </div>
+
+                    <div class="menuSubDivList">
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Brent Faiyaz
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Drake
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Bryson Tiller
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Young Ford
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Rory Fresco
+                            </t>
+                        </div>
+                    </div>
+
+                    <div class="menuSubDivList">
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Midland Live
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Granada 2018
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Tiller Unplugged
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            Love Live
+                            </t>
+                        </div>
+                        <div class="footerColumnSub">
+                            <t class="linkText">
+                            <div class="underlineDiv"></div>
+                            XX Live Mix
+                            </t>
+                        </div>
+                    </div>    
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- Menu SocMed Links -->
+        <div class="menuModalBottom">
+            <div class="socMedLinksDivMenu">
+                <div class="socMedLink">
+                    <img src="./images/Icons/Youtube.svg" alt="" class="youtubeLogo">
+                </div>
+                <div class="socMedLink">
+                    <img src="./images/Icons/Twitter.svg" alt="" class="twitterLogo">
+                </div>
+                <div class="socMedLink">
+                    <img src="./images/Icons/Instagram.svg" alt="" class="instagramLogo">
+                </div>
+                <div class="socMedLink">
+                    <img src="./images/Icons/Snapchat.svg" alt="" class="snapchatLogo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="sideNav">
+            <img src="./images/PNGs/SRrecordings.png" alt="SRLogo" class="logo">
+        </div>
+        <!-- Nav -->
+        <div class="mainNav">
+            <div class="nav header3Text currentNavButton">
+                <div class="navButtons">
+                    <img src="./images/icons/Home.svg" alt="Home" class="navLogo navSvg currentNavLogo">
+                    Home
+                </div>
+            </div>
+            <div class="nav header3Text">
+                <div class="navButtons">
+                    <img src="./images/icons/Records.svg" alt="Home" class="navLogo navSvg">
+                    Records
+                </div>
+            </div>
+            <div class="nav header3Text">
+                <div class="navButtons">
+                    <img src="./images/icons/Music.svg" alt="Home" class="navLogo navSvg">
+                    Music
+                </div>
+            </div>
+            <div class="nav header3Text">
+                <div class="navButtons">
+                    <img src="./images/icons/Artists.svg" alt="Home" class="navLogo navSvg">
+                    Artists
+                </div>
+            </div>
+            <div class="nav header3Text">
+                <div class="navButtons">
+                    <img src="./images/icons/Concerts.svg" alt="Home" class="navLogo navSvg">
+                    Concerts
+                </div>
+            </div>
+        </div>
+        <!-- Sign Up -->
+        <div class="sideNav">
+            <button class="greenButton buttonText" id="signUpButton">Sign Up</button>
+        </div>
+
+    </div>
+
+    <!-- Main Body -->
+    <div class="mainBody">
+
+        <!-- Hero -->
+        <div class="section heroSection">
+            <img src="./images/Images/image1.png" alt="" class="heroImage">
+            <div class="heroTextSection">
+                <div class="heroTextGroup">
+
+                    <!-- Hero Text -->
+                   <div class="heroName heroText">
+                    A.M. Paradox
+                   </div>
+
+                   <div class="heroDescription bodyText">
+                    Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox, in 2016.
+                   </div>
+
+                   <!-- Hero CTA -->
+                   <div class="heroCTA buttonText">
+                        <img src="./images/Icons/Play_button.png" alt="Play" class="watchVideo">
+                        <t class="linkText defaultPosition watchVideoText">
+                            Watch Video
+                        <div class="underlineDiv defaultPosition" id="watchUnderline"></div>
+                        </t>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Artist -->
+        <div class="section artistSection">
+            <div class="artistGroup">
+
+                <!-- Artist Image -->
+                <div class="artistGroupHalf artistLeftSide">
+                    <img src="./images/Images/image2.png" alt="" class="artistImage">
+                </div>
+
+                <!-- Artist Text -->
+                <div class="artistGroupHalf artistRightSide">
+
+                    <div class="artistName headlineText maxWidth45">
+                        Brent Faiyaz, So Far Gone 
+                    </div>
+
+                    <div class="artistDescription bodyText maxWidth45">
+                        Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. On January 19, 2015, he released his debut single "Allure".[4] On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and received with positive reviews from music critics.  On January 26, 2017, Sonder released their debut EP Into.
+                    </div>
+
+                    <div class="artistCTA maxWidth45">
+                        <button class="greenButton buttonText" id="learnMoreButton">Learn More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Releases -->
+        <div class="section releasesSection">
+
+            <!-- Releases Text -->
+            <div class="releasesText">
+                <div class="releasesHeadline headlineText">
+                    New Releases
+                </div>
+                <div class="releasesDescription bodyText">
+                    New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.
+                </div>
+            </div>
+
+            <div class="releasesBlank"></div>
+
+            <!-- Slider Buttons -->
+            <div class="sliderButtonsDiv">
+                <div class="sliderButtons" id="leftControl">
+                    <img src="./images/Icons/left_controller.png" alt="" class="controllerImages" id="leftControlImage">
+                </div>
+                <div class="sliderButtons" id="rightControl">
+                    <img src="./images/Icons/Right_controller.png" alt="" class="controllerImages" id="rightControlImage">
+                </div>
+            </div>
+
+            <!-- Releases Slider -->
+            <div class="releasesSliderSection">
+                <div class="releasesSlider">
+
+                    <!-- Releases Card -->
+                    <!-- <div class="newReleaseCardDiv">
+                        <div class="newReleaseCard">
+                            <div class="songCoverDiv">
+                                <img src="./images/Images/image4.png" alt="" class="songCoverImage">
+                            </div>
+                            <div class="songText">
+                                <div class="songName songNameText">
+                                    Trapsoul
+                                </div>
+                                
+                                <div class="artistCardName header3Text">
+                                    BRYSON TILLER
+                                </div>
+    
+                                <div class="artistInfo bodyText">
+                                    Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. 
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="newReleaseCardDiv">
+                        <div class="newReleaseCard">
+                            <div class="songCoverDiv">
+                                <img src="./images/Images/image4.png" alt="" class="songCoverImage">
+                            </div>
+                            <div class="songText">
+                                <div class="songName songNameText">
+                                    Trapsoul
+                                </div>
+                                
+                                <div class="artistCardName header3Text">
+                                    BRYSON TILLER
+                                </div>
+    
+                                <div class="artistInfo bodyText">
+                                    Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newReleaseCardDiv">
+                        <div class="newReleaseCard">
+                            <div class="songCoverDiv">
+                                <img src="./images/Images/image4.png" alt="" class="songCoverImage">
+                            </div>
+                            <div class="songText">
+                                <div class="songName songNameText">
+                                    Trapsoul
+                                </div>
+                                
+                                <div class="artistCardName header3Text">
+                                    BRYSON TILLER
+                                </div>
+    
+                                <div class="artistInfo bodyText">
+                                    Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newReleaseCardDiv">
+                        <div class="newReleaseCard">
+                            <div class="songCoverDiv">
+                                <img src="./images/Images/image4.png" alt="" class="songCoverImage">
+                            </div>
+                            <div class="songText">
+                                <div class="songName songNameText">
+                                    Trapsoul
+                                </div>
+                                
+                                <div class="artistCardName header3Text">
+                                    BRYSON TILLER
+                                </div>
+    
+                                <div class="artistInfo bodyText">
+                                    Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newReleaseCardDiv">
+                        <div class="newReleaseCard">
+                            <div class="songCoverDiv">
+                                <img src="./images/Images/image4.png" alt="" class="songCoverImage">
+                            </div>
+                            <div class="songText">
+                                <div class="songName songNameText">
+                                    Trapsoul
+                                </div>
+                                
+                                <div class="artistCardName header3Text">
+                                    BRYSON TILLER
+                                </div>
+    
+                                <div class="artistInfo bodyText">
+                                    Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="section mapSection">
+
+            <!-- Map iframe -->
+            <iframe src="https://snazzymaps.com/embed/401576" width="100%" height="100%" style="border:none;" class="mapFrame"></iframe>
+
+            <!-- Map text -->
+            <div class="mapTextSection">
+                <div class="mapPointerName XLHeadlineText">
+                    Lifted Logic HQ
+                </div>
+
+                <div class="addressName XLHeader3Text">
+                    <t class="selectable">10261 W 87th St, Overland Park, KS 66212</t>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="section formsSection">
+            <div class="forms">
+
+                <!-- Forms text -->
+                <div class="formsHeadline headlineText">
+                    Get In Touch
+                </div>
+
+                <div class="formsDescription bodyText">
+                    New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.
+                </div>
+
+                <!-- Forms Actual -->
+                <div class="formContainer">
+                    <form class="formsActual" action="">
+
+                        <div class="nameFormsDiv">
+                            <input type="text" class="inputText marginBottom1" id="fname" name="firstname" placeholder="First Name">
+                            <input type="text" class="inputText" id="lname" name="lastname" placeholder="Last Name">
+                        </div>
+
+                        <div class="contactFormsDiv">
+                            <input type="text" class="inputText marginBottom1" id="email" name="emailaddress" placeholder="Email Address">
+                            <select id="reason" class="inputText customSelect" name="reasonforcontacting">
+                                <option value="" disabled selected style="display: none;">Reason For Contacting</option>
+                                <option value="australia">Project Consultation</option>
+                                <option value="canada">Job Application</option>
+                                <option value="usa">Just Saying Hi!</option>
+                            </select>
+                        </div>
+
+                        <div class="textFormsDiv">
+                            <textarea id="subject" class="inputText" name="subject" placeholder="Write a Brief Message..."></textarea>
+                        </div>
+
+                        <div class="submitFormsDiv">
+                            <input type="submit" class="greenButton buttonText" value="Submit">
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Forms Image -->
+            <div class="formsImageDiv">
+                <img src="./images/Images/image3.png" alt="" class="formsImage">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="mainFooter">
+            <div class="footerColumn">
+                <div class="footerLogoDiv">
+                    <img src="./images/PNGS/SRrecordings_white.png" alt="" class="footerLogo">
+                </div>
+
+                <!-- Footer Address -->
+                <div class="addressFooter footerAddressText">
+                    <div class="addressFooterRow">
+                        8521 W Fairfax Rd
+                    </div>
+                    <div class="addressFooterRow">
+                        Los Angeles, CA
+                    </div>
+                    <div class="addressFooterRow">
+                        90210
+                    </div>
+                    <div class="addressFooterRow">
+                        909.505.4302
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footerColumn">
+                <div class="footerColumnHeader header3Text">
+                    EXPLORE
+                </div>
+                <div class="footerColumnSubDiv footerSubText">
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        About Us
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Our Story
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Team
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Careers
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        FAQ
+                        </t>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footerColumn">
+                <div class="footerColumnHeader header3Text">
+                    MUSIC
+                </div>
+                <div class="footerColumnSubDiv footerSubText">
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Missing Out
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Trapsoul
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Sonder Sons
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Paradise Today
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Needed
+                        </t>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footerColumn">
+                <div class="footerColumnHeader header3Text">
+                    ARTISTS
+                </div>
+                <div class="footerColumnSubDiv footerSubText">
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Brent Faiyaz
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Drake
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Bryson Tiller
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Young Ford
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Rory Fresco
+                        </t>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerColumn">
+                <div class="footerColumnHeader header3Text">
+                    RECORDS
+                </div>
+                <div class="footerColumnSubDiv footerSubText">
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        What a Time
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Coming Home
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Always First
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        So Far Gone
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Big Bluez
+                        </t>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerColumn">
+                <div class="footerColumnHeader header3Text">
+                    CONCERTS
+                </div>
+                <div class="footerColumnSubDiv footerSubText">
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Midland Live
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Granada 2018
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Tiller Unplugged
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        Love Live
+                        </t>
+                    </div>
+                    <div class="footerColumnSub">
+                        <t class="linkText">
+                        <div class="underlineDiv"></div>
+                        XX Live Mix
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Extras -->
+        <div class="footerExtrasDiv">
+            <div class="footerExtras">
+
+                <!-- Privacy and Terms -->
+                <div class="PnTDiv footerSubText">
+                    <div class="PnTHalf" id="privacyPolicy">
+                        <t class="linkText defaultPosition">
+                        Privacy Policy
+                        <div class="underlineDiv defaultPosition"></div>
+                        </t>
+                    </div>
+                    <div class="PnTHalf" id="termsAndConditions">
+                        <t class="linkText defaultPosition">
+                        Terms & Conditions
+                        <div class="underlineDiv defaultPosition"></div>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- SocMed Links -->
+                <div class="socMedLinksDiv">
+                    <div class="socMedLink">
+                        <img src="./images/Icons/Youtube.svg" alt="" class="youtubeLogo">
+                    </div>
+                    <div class="socMedLink">
+                        <img src="./images/Icons/Twitter.svg" alt="" class="twitterLogo">
+                    </div>
+                    <div class="socMedLink">
+                        <img src="./images/Icons/Instagram.svg" alt="" class="instagramLogo">
+                    </div>
+                    <div class="socMedLink">
+                        <img src="./images/Icons/Snapchat.svg" alt="" class="snapchatLogo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Portrait -->
+    <div class="footerPortrait">
+        <div class="footerLogoDiv">
+            <img src="./images/PNGS/SRrecordings_white.png" alt="" class="footerLogo">
+        </div>
+
+        <div class="addressFooterPortrait footerSubText">
+            <div class="addressFooterRowPortrait">
+                8521 W Fairfax Rd
+            </div>
+            <div class="addressFooterRowPortrait">
+                Los Angeles, CA
+            </div>
+            <div class="addressFooterRowPortrait">
+                90210
+            </div>
+            <div class="addressFooterRowPortrait">
+                909.505.4302
+            </div>
+        </div>
+
+        <div class="PnTPortrait footerSubText">
+            <div class="PnTHalfPortrait">
+                <div class="PnTHalf" id="privacyPolicy">
+                    <t class="linkText defaultPosition">
+                    Privacy Policy
+                    <div class="underlineDiv defaultPosition"></div>
+                    </t>
+                </div>
+            </div>
+            
+            <div class="PnTHalfPortrait">
+                <div class="PnTHalf" id="termsAndConditions">
+                    <t class="linkText defaultPosition">
+                    Terms & Conditions
+                    <div class="underlineDiv defaultPosition"></div>
+                    </t>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
