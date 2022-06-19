@@ -344,7 +344,7 @@ body {
         appearance:none;
         -ms-appearance:none; /* Ie */
         background-position: calc(100% - 0.5rem) center !important;
-        background: url("./images/Icons/dropdown_triangle.png") no-repeat;
+        background: url("assets/images/Icons/dropdown_triangle.png") no-repeat;
     }
 
     /* Footer Portrait */
@@ -525,7 +525,7 @@ body {
         appearance:none;
         -ms-appearance:none; /* Ie */
         background-position: calc(100% - 2.3rem) center !important;
-        background: url("./images/Icons/dropdown_triangle.png") no-repeat;
+        background: url("assets/images/Icons/dropdown_triangle.png") no-repeat;
     }
     .footer {
         width: 100%;
