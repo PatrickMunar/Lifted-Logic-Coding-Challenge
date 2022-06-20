@@ -121,7 +121,7 @@ body {
     }
     .menuModal {
         position: fixed;
-        z-index: 9000;
+        z-index: 0;
         width: 100vw;
         height: 100vh;
         background-color: #001D5D;
@@ -862,7 +862,7 @@ body {
 /* Form Container */
 .formContainer {
     min-width: 55rem;
-    margin-top: 4.5rem;
+    margin-top: 4.5rem;;
 }
 
 .customSelect {
@@ -1094,6 +1094,7 @@ input[type=submit] {
     top: 0;
     left: 0;
     background-color: #001D5D;
+    opacity: 0;
 }
 
 .cursorFollowerMid {
@@ -1107,6 +1108,7 @@ input[type=submit] {
     top: 0;
     left: 0;
     background-color: #FFFFFF;
+    opacity: 0;
 }
 
 .cursorFollowerSmall {
@@ -1120,4 +1122,5 @@ input[type=submit] {
     top: 0;
     left: 0;
     background-color: #001D5D;
+    opacity: 0;
 }

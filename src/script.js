@@ -147,7 +147,12 @@ window.addEventListener('resize', () => {
         currentSliderPosition = Math.floor(currentSliderPosition / cardWidth)
         cardWidth = document.querySelector('.newReleaseCardDiv').clientWidth
         currentSliderPosition = currentSliderPosition * cardWidth
-        additionalSlide = cardWidth/2
+        if (cardCount%2 == 0) {
+            additionalSlide = cardWidth/2
+        }
+        else {
+            additionalSlide = 0
+        }
         gsap.to('.releasesSlider', {duration: 0, x: currentSliderPosition + additionalSlide, ease: 'none'})
     }
 
@@ -236,6 +241,13 @@ window.addEventListener('mousemove', (e) => {
     gsap.to('.cursorFollowerBig', {duration: 0, x: e.clientX - 9, y: e.clientY - 9})
     gsap.to('.cursorFollowerMid', {duration: 0.2, x: e.clientX - 7, y: e.clientY - 7})
     gsap.to('.cursorFollowerSmall', {duration: 0.4, x: e.clientX - 5, y: e.clientY - 5})
+})
+
+// Cursor Follower Appears
+document.body.addEventListener('mouseenter', () => {
+    gsap.to('.cursorFollowerBig', {duration: 0.5, delay: 0.5, opacity: 1})
+    gsap.to('.cursorFollowerMid', {duration: 0.5, delay: 0.5, opacity: 1})
+    gsap.to('.cursorFollowerSmall', {duration: 0.5, delay: 0.5, opacity: 1})
 })
 
 // Click
@@ -381,7 +393,7 @@ let isMenuIn = false
 let isModalAnimating = false
 
 gsap.to('.menuLogoWhite', {duration: 0, rotationZ: 90})
-gsap.to('.menuModal', {duration: 0, x: window.innerWidth})
+gsap.to('.menuModal', {duration: 0, x: window.innerWidth, zIndex: 9000})
 gsap.to('.menuSubDivs', {duration: 0, x: 20, opacity: 0})
 
 menuButton.addEventListener('click', () => {
