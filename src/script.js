@@ -309,6 +309,17 @@ gsap.fromTo('.artistImage', {opacity: 0}, {
     opacity: 1
 })
 
+gsap.fromTo('.formsImage', {y: -200}, {
+    scrollTrigger: {
+        trigger: '.formsSection',
+        start: () =>  window.innerHeight*0 + ' bottom',
+        end: () =>  window.innerHeight*0 + ' top',
+        scrub: true,
+        markers: false
+    },
+    y: 0
+})
+
 // Nav States
 const navs = document.querySelectorAll('.nav')
 const navSVGs = document.querySelectorAll('.navSvg')
