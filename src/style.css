@@ -252,6 +252,7 @@ body {
         transform-origin: top left;
         position: relative;
         z-index: 10;
+        margin-top: 6.6rem;
     }
     .artistLeftSide {
         display: flex;
@@ -437,6 +438,7 @@ body {
         transform-origin: top left;
         position: relative;
         z-index: 10;
+        margin-top: 6.6rem;
     }
     .artistLeftSide {
         display: flex;
@@ -637,6 +639,7 @@ body {
 }
 
 .heroDescription {
+    margin-top: 0.4rem;
     margin-bottom: 3rem;
 }
 
@@ -841,6 +844,11 @@ body {
     z-index: 700;
 }
 
+.formsHeadline {
+    color: #001D5D;
+    margin-bottom: 0.7rem;
+}
+
 .formsDescription {
     max-width: 44rem;
 }
@@ -862,7 +870,7 @@ body {
 /* Form Container */
 .formContainer {
     min-width: 55rem;
-    margin-top: 4.5rem;;
+    margin-top: 4.5rem;
 }
 
 .customSelect {
